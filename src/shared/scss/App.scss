@@ -1,0 +1,89 @@
+$font-prefix: "~@ibm/plex";
+$font-family-base: "IBM Plex Sans";
+
+@import "custom.scss";
+@import "~@ibm/plex/scss/ibm-plex.scss";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: theme-color(light);
+}
+
+.card-header {
+  border-top: 3px solid theme-color-level(dark, -5);
+}
+
+hr {
+  margin-top: 2rem !important;
+}
+
+.cardFooterButton,
+.cardFooterButton:focus,
+.cardFooterButton:active {
+  border: 0;
+  outline: none !important;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.resetInput {
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.pointerCursor {
+  cursor: pointer;
+}
+
+.hover-container {
+  &:hover .hover-hide {
+    display: block;
+  }
+}
+
+.hover-hide {
+  display: none;
+}
+
+.chevron {
+  &.enabled {
+    fill: theme-color(secondary);
+  }
+
+  &.enabled:hover {
+    cursor: pointer;
+    fill: theme-color(dark);
+  }
+
+  &.disabled {
+    fill: theme-color(primary);
+    pointer-events: none;
+  }
+}
+
+// Due to react-beautiful-dnd every list item gets wrapped in a div, so first-child always applies and they lose their top border
+.card-header {
+  + .list-group {
+    .list-group-item:first-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+  }
+}
+
+#terminal {
+  font-family: "IBM Plex Mono";
+  font-size: 0.8em;
+}
+
+.CodeMirror {
+  height: auto;
+}
