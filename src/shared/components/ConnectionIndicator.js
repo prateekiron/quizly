@@ -80,14 +80,14 @@ export default class ConnectionIndicator extends React.Component {
               <DropdownItem header>Share with client</DropdownItem>
               <DropdownItem divider />
 
-              <DropdownItem
+              {/* <DropdownItem
                 style={{ cursor: "pointer" }}
                 onClick={this.toggleModal}
               >
                 <QrcodeIcon className="text-muted" />
                 {`  `}
                 Show QR Code
-              </DropdownItem>
+              </DropdownItem> */}
               <Modal isOpen={showModal} toggle={this.toggleModal} size="lg">
                 <ModalHeader toggle={this.toggleModal}>
                   Share QR Code

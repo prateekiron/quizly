@@ -1,8 +1,8 @@
 const schema = {
   $schema: "http://json-schema.org/draft-07/schema#",
-  $id: "http://www.Quizly.de/questions.json",
+  $id: "https:/quizly-juet.herokuapp.com/questions.json",
   type: "array",
-  title: "A question set for Quizly.de",
+  title: "A question set for quizly-juet.herokuapp.com",
   items: {
     type: "object",
     title: "A single question",
