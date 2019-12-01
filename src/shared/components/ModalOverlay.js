@@ -36,7 +36,7 @@ class ModalOverlay extends React.Component {
             culpa qui officia deserunt mollit anim id est laborum.
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={this.toggleModal}>
+            <Button color="primary" onClick={this.toggleModal}>
               Cancel
             </Button>
           </ModalFooter>

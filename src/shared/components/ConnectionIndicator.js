@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 import LinkIcon from "mdi-react/LinkIcon";
 import ClipboardTextIcon from "mdi-react/ClipboardTextIcon";
-import QrcodeIcon from "mdi-react/QrcodeIcon";
+// import QrcodeIcon from "mdi-react/QrcodeIcon";
 import QRCode from "qrcode.react";
 
 const copyToClipboard = content => {

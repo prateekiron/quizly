@@ -21,7 +21,7 @@ function WaitScreen(props) {
           } ${pluralizeClient} connected. You can choose to wait for more participants or just go ahead and start the quiz.`}
         >
           <Button
-            color="secondary"
+            color="warning"
             block
             onClick={() => {
               history.push("/server/ask");

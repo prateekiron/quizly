@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import UploadIcon from "mdi-react/UploadIcon";
 import FileUploadIcon from "mdi-react/FileUploadIcon";
-import DropboxIcon from "mdi-react/DropboxIcon";
+// import DropboxIcon from "mdi-react/DropboxIcon";
 import {
   ButtonDropdown,
   DropdownMenu,
@@ -10,7 +10,7 @@ import {
   DropdownToggle
 } from "reactstrap";
 import SingleFileInput from "../../shared/components/SingleFileInput";
-import DropboxChooser from "./DropboxChooser";
+// import DropboxChooser from "./DropboxChooser";
 
 class QuestionEditorListDropdown extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class QuestionEditorListDropdown extends React.Component {
 
   render() {
     const { dropdownOpen } = this.state;
-    const { onUploadFile, onUploadDropbox } = this.props;
+    const { onUploadFile } = this.props;
     return (
       <ButtonDropdown isOpen={dropdownOpen} toggle={this.toggle}>
         <DropdownToggle color="light" caret>
@@ -45,7 +45,7 @@ class QuestionEditorListDropdown extends React.Component {
             </DropdownItem>
           </SingleFileInput>
 
-          <DropdownItem>
+          {/* <DropdownItem>
             <DropboxChooser
               appKey={process.env.REACT_APP_DROPBOX_APP_KEY}
               linkType="direct"
@@ -57,7 +57,7 @@ class QuestionEditorListDropdown extends React.Component {
             >
               <DropboxIcon className="text-secondary" /> Dropbox
             </DropboxChooser>
-          </DropdownItem>
+          </DropdownItem> */}
         </DropdownMenu>
       </ButtonDropdown>
     );
@@ -66,7 +66,7 @@ class QuestionEditorListDropdown extends React.Component {
 
 QuestionEditorListDropdown.propTypes = {
   onUploadFile: PropTypes.func.isRequired,
-  onUploadDropbox: PropTypes.func.isRequired
+  // onUploadDropbox: PropTypes.func.isRequired
 };
 
 export default QuestionEditorListDropdown;

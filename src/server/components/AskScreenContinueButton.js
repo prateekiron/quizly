@@ -44,7 +44,7 @@ const AskScreenContinueButton = props => {
           <SkipNextIcon style={{ paddingBottom: "3px" }} /> Next Question
         </>
       ),
-      color: "secondary",
+      color: "info",
       additionalButtonProps: {
         disabled: !hasNextQuestion
       }

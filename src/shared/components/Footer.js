@@ -13,7 +13,7 @@ const Footer = () => (
           </a>
         </Col>
         <Col className="text-right">
-          <a href="https://github.com/prateekiron/Quizly">
+          <a href="https://github.com/prateekiron/quizly">
             <GithubCircleIcon />
           </a>
         </Col>

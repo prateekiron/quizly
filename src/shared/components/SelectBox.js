@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 const SelectBox = props => {
   const { header, text, children, emoji } = props;
   return (
-    <Card className="shadow-none">
-      <CardHeader>
+    <Card>
+      <CardHeader className="bg-cyan">
         <h4 className="my-0">{header}</h4>
       </CardHeader>
       <CardBody className="d-flex flex-column">
@@ -20,7 +20,7 @@ const SelectBox = props => {
             {emoji}
           </span>
 
-          <span>{text}</span>
+          <span className="font-italic text-gray">{text}</span>
         </CardText>
         {children}
       </CardBody>
